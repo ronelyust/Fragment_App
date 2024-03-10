@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_two.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView to greet the user -->
+    <TextView
+        android:id="@+id/textViewGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp" />
+
+    <!-- TextView to display the username -->
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGreeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <!-- RecyclerView to display shopping cart items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewShoppingCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textViewUsername"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
